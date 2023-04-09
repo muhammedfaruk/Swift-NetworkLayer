@@ -11,6 +11,11 @@
 		597C492629E0ACFB001E6EAC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597C492529E0ACFB001E6EAC /* ContentView.swift */; };
 		597C492829E0ACFB001E6EAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 597C492729E0ACFB001E6EAC /* Assets.xcassets */; };
 		597C492B29E0ACFB001E6EAC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 597C492A29E0ACFB001E6EAC /* Preview Assets.xcassets */; };
+		597C493829E0AEB8001E6EAC /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597C493729E0AEB8001E6EAC /* NetworkManager.swift */; };
+		597C493A29E0AEFA001E6EAC /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597C493929E0AEFA001E6EAC /* Endpoint.swift */; };
+		597C493D29E0B412001E6EAC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597C493C29E0B412001E6EAC /* User.swift */; };
+		597C493F29E0B6C1001E6EAC /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597C493E29E0B6C1001E6EAC /* Comment.swift */; };
+		598FC2B529E2DFD700FAAD42 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598FC2B429E2DFD700FAAD42 /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		597C492529E0ACFB001E6EAC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		597C492729E0ACFB001E6EAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		597C492A29E0ACFB001E6EAC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		597C493729E0AEB8001E6EAC /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		597C493929E0AEFA001E6EAC /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		597C493C29E0B412001E6EAC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		597C493E29E0B6C1001E6EAC /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		598FC2B429E2DFD700FAAD42 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +61,9 @@
 		597C492229E0ACFB001E6EAC /* NetworkLayer */ = {
 			isa = PBXGroup;
 			children = (
-				597C492329E0ACFB001E6EAC /* NetworkLayerApp.swift */,
+				597C493629E0AEA9001E6EAC /* Service */,
 				597C492529E0ACFB001E6EAC /* ContentView.swift */,
+				597C492329E0ACFB001E6EAC /* NetworkLayerApp.swift */,
 				597C492729E0ACFB001E6EAC /* Assets.xcassets */,
 				597C492929E0ACFB001E6EAC /* Preview Content */,
 			);
@@ -65,6 +76,26 @@
 				597C492A29E0ACFB001E6EAC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		597C493629E0AEA9001E6EAC /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				597C493B29E0B40B001E6EAC /* Model */,
+				597C493729E0AEB8001E6EAC /* NetworkManager.swift */,
+				597C493929E0AEFA001E6EAC /* Endpoint.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		597C493B29E0B40B001E6EAC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				597C493C29E0B412001E6EAC /* User.swift */,
+				597C493E29E0B6C1001E6EAC /* Comment.swift */,
+				598FC2B429E2DFD700FAAD42 /* Post.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +168,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				597C493829E0AEB8001E6EAC /* NetworkManager.swift in Sources */,
+				597C493F29E0B6C1001E6EAC /* Comment.swift in Sources */,
 				597C492629E0ACFB001E6EAC /* ContentView.swift in Sources */,
+				597C493A29E0AEFA001E6EAC /* Endpoint.swift in Sources */,
+				597C493D29E0B412001E6EAC /* User.swift in Sources */,
+				598FC2B529E2DFD700FAAD42 /* Post.swift in Sources */,
 				597C492429E0ACFB001E6EAC /* NetworkLayerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
